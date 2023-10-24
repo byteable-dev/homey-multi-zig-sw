@@ -1,25 +1,15 @@
+'use strict';
+
 const { ZigBeeDevice } = require('homey-zigbeedriver');
 const { debug } = require('zigbee-clusters');
-const { BoundCluster } = require('zigbee-clusters');
+const MultiStageInputBoundCluster = require('../../lib/MultiStageInputBoundCluster');
 
 debug(true);
-
-class MultiStageInputBoundCluster extends BoundCluster {
-
-  constructor({ reportAttributes }) {
-    super();
-    this._reportAttributes = reportAttributes;
-  }
-
-  reportAttributes(payload) {
-    this._reportAttributes(payload);
-  }
-
-}
-
 class Device extends ZigBeeDevice {
 
   async onNodeInit({ zclNode }) {
+
+    // Listen for battery updates
     zclNode.endpoints[1].clusters.powerConfiguration.on('attr.batteryVoltage', (data) => {
       const voltage = data * 100;
       const battery = (voltage - 2200) / 8;
@@ -27,15 +17,9 @@ class Device extends ZigBeeDevice {
       this.setCapabilityValue('measure_battery', batteryPercent).catch(this.error);
     });
 
+    // Bind on/off cluster
     const multiStateEndpoints = [2, 3, 4, 5];
-
     multiStateEndpoints.forEach((endpoint, index) => {
-    /*
-      zclNode.endpoints[endpoint].clusters.multistateInput.on('attr.presentValue', (data) => {
-        console.log('wtf', data);
-      });
-      */
-
       zclNode.endpoints[endpoint].bind(
         'multistateInput',
         new MultiStageInputBoundCluster({
