@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d325b47-3334-4c0c-8dd2-2698b68963e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.homeycompose/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/.homeycompose/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/multi-zig-sw/assets/chip-large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/multi-zig-sw/assets/chip-small.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/drivers/multi-zig-sw/driver.compose.json" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/multi-zig-sw/driver.compose.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +60,7 @@
       <updated>1696503969107</updated>
       <workItem from="1696503970178" duration="14739000" />
       <workItem from="1696962374286" duration="5815000" />
-      <workItem from="1698068223129" duration="10646000" />
+      <workItem from="1698068223129" duration="11525000" />
     </task>
     <servers />
   </component>

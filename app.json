@@ -16,6 +16,7 @@
   "category": [
     "tools"
   ],
+  "brandColor": "#283F2F",
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -96,6 +97,10 @@
           "CR2032"
         ]
       },
+      "images": {
+        "large": "/drivers/multi-zig-sw/assets/large.png",
+        "small": "/drivers/multi-zig-sw/assets/small.png"
+      },
       "zigbee": {
         "manufacturerName": "smarthjemmet.dk",
         "productId": [
@@ -141,7 +146,6 @@
           }
         },
         "learnmode": {
-          "image": "/drivers/my_driver/assets/learnmode.svg",
           "instruction": {
             "en": "Insert batteries and wait for device to be discovered. If any issues see more at: https://www.youtube.com/watch?v=LkbnLPhi5Ts"
           }

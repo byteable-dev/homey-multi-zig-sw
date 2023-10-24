@@ -9,6 +9,10 @@
       "CR2032"
     ]
   },
+  "images": {
+    "large": "/drivers/multi-zig-sw/assets/large.png",
+    "small": "/drivers/multi-zig-sw/assets/small.png"
+  },
   "zigbee": {
     "manufacturerName": "smarthjemmet.dk",
     "productId": ["MULTI-ZIG-SW"],
@@ -35,10 +39,6 @@
     },
     "learnmode": {
       "instruction": { "en": "Insert batteries and wait for device to be discovered. If any issues see more at: https://www.youtube.com/watch?v=LkbnLPhi5Ts" }
-    },
-    "images": {
-      "large": "/drivers/multi-zig-sw/assets/chip-large.jpg",
-      "small": "/drivers/multi-zig-sw/assets/chip-small.jpg"
     }
   }
 }
