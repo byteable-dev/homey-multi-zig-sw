@@ -1,0 +1,28 @@
+{
+  "id": "multi-zig-sw.byteable.dev",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "multi-ziq-sw"
+  },
+  "description": {
+    "en": "An app to communicate with smarthjemmet.dk's multi-zig-sw device"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Rasmus Styrk",
+    "email": "rasmus@byteable.dev"
+  }
+}

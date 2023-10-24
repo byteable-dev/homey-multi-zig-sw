@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "id": "toggled-0",
+      "title": {
+        "en": "On/off button was pressed (btn0)"
+      }
+    },
+    {
+      "id": "toggled-1",
+      "title": {
+        "en": "On/off button was pressed (btn1)"
+      }
+    },
+    {
+      "id": "toggled-2",
+      "title": {
+        "en": "On/off button was pressed (btn2)"
+      }
+    },
+    {
+      "id": "toggled-3",
+      "title": {
+        "en": "On/off button was pressed (btn3)"
+      }
+    }
+  ]
+}

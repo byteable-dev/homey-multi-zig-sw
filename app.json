@@ -1,0 +1,153 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "multi-zig-sw.byteable.dev",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "multi-ziq-sw"
+  },
+  "description": {
+    "en": "An app to communicate with smarthjemmet.dk's multi-zig-sw device"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Rasmus Styrk",
+    "email": "rasmus@byteable.dev"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "toggled-0",
+        "title": {
+          "en": "On/off button was pressed (btn0)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=multi-zig-sw"
+          }
+        ]
+      },
+      {
+        "id": "toggled-1",
+        "title": {
+          "en": "On/off button was pressed (btn1)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=multi-zig-sw"
+          }
+        ]
+      },
+      {
+        "id": "toggled-2",
+        "title": {
+          "en": "On/off button was pressed (btn2)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=multi-zig-sw"
+          }
+        ]
+      },
+      {
+        "id": "toggled-3",
+        "title": {
+          "en": "On/off button was pressed (btn3)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=multi-zig-sw"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "MULTI-ZIG-SW"
+      },
+      "class": "remote",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "smarthjemmet.dk",
+        "productId": [
+          "MULTI-ZIG-SW"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1
+            ]
+          },
+          "2": {
+            "clusters": [
+              18
+            ],
+            "bindings": [
+              18
+            ]
+          },
+          "3": {
+            "clusters": [
+              18
+            ],
+            "bindings": [
+              18
+            ]
+          },
+          "4": {
+            "clusters": [
+              18
+            ],
+            "bindings": [
+              18
+            ]
+          },
+          "5": {
+            "clusters": [
+              18
+            ],
+            "bindings": [
+              18
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/my_driver/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the button on your device three times"
+          }
+        }
+      },
+      "id": "multi-zig-sw"
+    }
+  ]
+}
