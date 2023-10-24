@@ -34,8 +34,11 @@
       }
     },
     "learnmode": {
-      "image": "/drivers/my_driver/assets/learnmode.svg",
-      "instruction": { "en": "Press the button on your device three times" }
+      "instruction": { "en": "Insert batteries and wait for device to be discovered. If any issues see more at: https://www.youtube.com/watch?v=LkbnLPhi5Ts" }
+    },
+    "images": {
+      "large": "/drivers/multi-zig-sw/assets/chip-large.jpg",
+      "small": "/drivers/multi-zig-sw/assets/chip-small.jpg"
     }
   }
 }
